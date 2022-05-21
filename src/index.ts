@@ -108,7 +108,7 @@ type Curry<F extends Func> =
   ? Curry8<F>
   : any;
 
-function curry<F extends Func>(fn: F): Curry<F> {
+export function curry<F extends Func>(fn: F): Curry<F> {
   return function curried(this: any, ...args: any[]) {
     if (args.length >= fn.length) {
       return fn.apply (this, args);
@@ -118,5 +118,3 @@ function curry<F extends Func>(fn: F): Curry<F> {
     };
   };
 };
-
-export default curry;
