@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "alwaysStrict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules", 
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "./src/test",
+    "./src/workbench.ts",
+    "./src/soccer.ts"
+  ],
+  "ts-node": {
+    "files": true
+  }
+}
