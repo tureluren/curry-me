@@ -18,9 +18,7 @@
     "node_modules", 
     "**/*.test.ts",
     "**/*.spec.ts",
-    "./src/test",
     "./src/workbench.ts",
-    "./src/soccer.ts"
   ],
   "ts-node": {
     "files": true

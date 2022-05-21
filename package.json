@@ -6,9 +6,9 @@
   "types": "build/index.d.ts",
   "version": "1.0.0",
   "scripts": {
-    "start": "NODE_ENV=development nodemon src/workbench.ts",
-    "test": "NODE_ENV=test jest --setupFiles dotenv/config --watch --detectOpenHandles",
-    "cover": "NODE_ENV=test jest --setupFiles dotenv/config --coverage"
+    "start": "nodemon src/workbench.ts",
+    "test": "NODE_ENV=test jest --watch --detectOpenHandles",
+    "cover": "NODE_ENV=test jest --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
@@ -18,7 +18,6 @@
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
-    "dotenv": "^10.0.0",
     "eslint": "^8.3.0",
     "jest": "^27.4.5",
     "nodemon": "^2.0.15",
@@ -26,8 +25,20 @@
     "ts-node": "^10.4.0",
     "typescript": "^4.5.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tureluren/curry-me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tureluren/curry-me/issues"
+  },
+  "homepage": "https://github.com/tureluren/curry-me#readme",
   "files": [
     "build/**/*"
+  ],
+  "keywords": [
+    "functional programming",
+    "curry"
   ],
   "jest": {
     "roots": [
