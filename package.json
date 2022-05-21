@@ -1,6 +1,7 @@
 {
   "name": "curry-me",
   "author": "Rafael Tureluren <rafaelbeltu@gmail.com>",
+  "description": "Curry function with great IntelliSense.",
   "license": "MIT",
   "main": "build/index.js",
   "types": "build/index.d.ts",

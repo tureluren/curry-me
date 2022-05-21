@@ -1,7 +1,5 @@
 import curry from "./curry";
 
-const add = curry ((x, y) => x + y);
+const add = curry ((x: number, y: number, z: number) => x + y + z);
 
-console.log (
-  add (1, 2)
-);
+add (1) (2) (3);
