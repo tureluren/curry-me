@@ -10,7 +10,7 @@
     "start": "nodemon src/workbench.ts",
     "test": "NODE_ENV=test jest --watch --detectOpenHandles",
     "cover": "NODE_ENV=test jest --coverage",
-    "build": "rm -rf build && tsc --build",
+    "build": "rm -rf build && tsc --project tsconfig.build.json",
     "lint": "eslint ./src --ext .js,.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint"

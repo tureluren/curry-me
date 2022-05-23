@@ -1,4 +1,4 @@
-import { curry } from ".";
+import curry from ".";
 
 describe ("Curry", () => {
   test ("Curry1", () => {

@@ -7,7 +7,7 @@ type Func<A extends Args = any, R extends any = any> =
 
 type Params<F extends Func> =
     F extends ((...args: infer A) => any)
-    ? A
+    ? Required<A>
     : never;
 
 type Ret<F extends Func> =
@@ -108,7 +108,7 @@ type Curry<F extends Func> =
   ? Curry8<F>
   : any;
 
-export function curry<F extends Func>(fn: F): Curry<F> {
+export = function curry<F extends Func>(fn: F): Curry<F> {
   return function curried(this: any, ...args: any[]) {
     if (args.length >= fn.length) {
       return fn.apply (this, args);
