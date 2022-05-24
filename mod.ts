@@ -1,3 +1,1 @@
-import curry from "./src/index.ts";
-
-export default curry;
+export { curry } from "./src/index.ts";
