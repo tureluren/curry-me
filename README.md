@@ -13,7 +13,7 @@ npm install curry-me
 
 ## Getting started
 ```ts
-import curry from "curry-me";
+import { curry } from "curry-me";
 
 const add = curry ((x: number, y: number, z: number) => x + y + z);
 
